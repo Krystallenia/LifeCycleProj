@@ -1,0 +1,29 @@
+﻿@using LifeCycle.Controllers
+@{
+    ViewData["Title"] = "CSV Import";
+}
+
+<div class="container" style="max-width:480px; margin-top:4rem;">
+    <h5 class="mb-4 text-muted fw-light">CSV Import</h5>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success py-2 small">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger py-2 small">@TempData["Error"]</div>
+    }
+
+    <form asp-controller="Home" asp-action="ImportCSV" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+            <label for="csvFile" class="form-label small text-muted">CSV-Datei auswählen</label>
+            <input type="file" id="csvFile" name="csvFile" accept=".csv" class="form-control form-control-sm" required />
+        </div>
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary btn-sm">Importieren</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-sm">Abbrechen</a>
+        </div>
+    </form>
+</div>

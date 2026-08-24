@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="LifeCycle.DataAccess/LifeCycle.DataAccess.csproj" />
+  <Project Path="LifeCycle.Models/LifeCycle.Models.csproj" />
+  <Project Path="LifeCycle/LifeCycle.csproj" />
+</Solution>
