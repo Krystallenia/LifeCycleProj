@@ -82,6 +82,8 @@ The app follows a layered structure:
 ---
 
 ## Database
+<img width="1905" height="1343" alt="WhatsApp Image 2026-08-24 at 18 48 41" src="https://github.com/user-attachments/assets/fb08c72a-7af8-4b13-9164-107caedb4f57" />
+<img width="393" height="488" alt="image" src="https://github.com/user-attachments/assets/32c71665-dac1-4e2f-8dda-3f00513b381d" />
 
 - Provider: `SQL Server`
 - Configured via `ConnectionStrings:DefaultConnection` in `appsettings.json`
@@ -95,6 +97,9 @@ The app follows a layered structure:
 ---
 
 ## Run the Project
+<img width="1919" height="992" alt="Screenshot 2026-08-24 185031" src="https://github.com/user-attachments/assets/6e3a5afb-4767-4edf-af00-70dcfe1bf2dc" />
+<img width="1919" height="991" alt="Screenshot 2026-08-24 183911" src="https://github.com/user-attachments/assets/83a95b43-a900-4982-ad0d-a5c3435546a1" />
+
 
 ### Prerequisites
 - .NET 10 SDK
