@@ -12,7 +12,11 @@ namespace LifeCycle.Models
         public string Manufacturer { get; set; }
 
         public string Name { get; set; }
-       
-        public virtual ICollection<Component> Components { get; set; } = new List<Component>(); 
+
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public DateTime UpdatedAt { get; set; }
+
+        public virtual ICollection<Component> Components { get; set; } = new List<Component>();
     }
 }

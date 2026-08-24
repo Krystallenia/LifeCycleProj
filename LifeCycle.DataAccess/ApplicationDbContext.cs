@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using LifeCycle.Models;
+﻿using LifeCycle.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LifeCycle.DataAccess
 {

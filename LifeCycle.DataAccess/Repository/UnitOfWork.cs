@@ -51,7 +51,7 @@ namespace LifeCycle.DataAccess.Repository
 
         public void Dispose()
         {
-           _transaction?.Dispose();
+            _transaction?.Dispose();
             _context.Dispose();
         }
     }

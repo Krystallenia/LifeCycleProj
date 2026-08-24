@@ -14,10 +14,9 @@ namespace LifeCycle.Models
         [ForeignKey("LineId")]
         public Line Line { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public DateTime UpdatedAt { get; set; }
-
 
         public virtual ICollection<Component> Components { get; set; } = new List<Component>();
     }

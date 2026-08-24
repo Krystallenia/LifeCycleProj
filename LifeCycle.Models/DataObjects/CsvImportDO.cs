@@ -10,7 +10,7 @@ namespace LifeCycle.DataObjects
         [Name("Komponentengruppe")]
         public string ComponentGroup { get; set; }
 
-        [Name("Komponententyp")]
+        [Name("Komponentengruppentyp")]
         public string ComponentType { get; set; }
 
         [Name("Artikelnummer")]

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LifeCycle.DataAccess.Repository.IRepository
+﻿namespace LifeCycle.DataAccess.Repository.IRepository
 {
-    public interface IUnitOfWork :IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         ApplicationDbContext Context { get; }
 

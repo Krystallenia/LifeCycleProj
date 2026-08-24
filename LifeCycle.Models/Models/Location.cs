@@ -9,8 +9,8 @@ namespace LifeCycle.Models
 
         public string Name { get; set; }
 
-        public DateTime CreatedAt { get; set; }
-    
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
         public DateTime UpdatedAt { get; set; }
 
         public virtual ICollection<Line> Lines { get; set; } = new List<Line>();

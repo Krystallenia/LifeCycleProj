@@ -20,7 +20,7 @@ namespace LifeCycle.Services
             _unitOfWork = unitOfWork;
         }
 
-        
+
         public async Task<ImportResult> ImportCsvDataAsync(Stream csvStream)
         {
 
@@ -49,7 +49,7 @@ namespace LifeCycle.Services
                     return result;
                 }
 
-                foreach( var record in records)
+                foreach (var record in records)
                 {
                     try
                     {
@@ -59,10 +59,10 @@ namespace LifeCycle.Services
                     catch (Exception ex)
                     {
                         result.ErrorMessages.Add($"Error processing record with FolderPath '{record.FolderPath}': {ex.Message}");
-                       
+
                     }
 
-                    if(result.ErrorMessages.Any()) // rollback if any error occurs
+                    if (result.ErrorMessages.Any()) // rollback if any error occurs
                     {
                         await _unitOfWork.RollBackTransactionAsync();
                         result.Success = false;
@@ -89,7 +89,7 @@ namespace LifeCycle.Services
             return result;
         }
 
-        private async Task ProcessRecordAsync(CsvImportDO record) 
+        private async Task ProcessRecordAsync(CsvImportDO record)
         {
             //get folder path 
             var pathParts = record.FolderPath.Split('/', StringSplitOptions.RemoveEmptyEntries);
@@ -112,7 +112,7 @@ namespace LifeCycle.Services
                 await _unitOfWork.Context.Locations.AddAsync(location);
                 await _unitOfWork.SaveAsync();
             }
-           
+
 
             // get line 
             var lineName = pathParts[1];
@@ -189,4 +189,4 @@ namespace LifeCycle.Services
             }
         }
     }
-} 
+}

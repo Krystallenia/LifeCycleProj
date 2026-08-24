@@ -5,7 +5,7 @@ namespace LifeCycle.Models
 {
     public class Line
     {
-        [Key] 
+        [Key]
         public int LineId { get; set; }
 
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace LifeCycle.Models
         [ForeignKey("LocationId")]
         public Location Location { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public DateTime UpdatedAt { get; set; }
 
