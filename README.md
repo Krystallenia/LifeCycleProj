@@ -99,6 +99,7 @@ The app follows a layered structure:
 ## Run the Project
 <img width="1919" height="992" alt="Screenshot 2026-08-24 185031" src="https://github.com/user-attachments/assets/6e3a5afb-4767-4edf-af00-70dcfe1bf2dc" />
 <img width="1919" height="991" alt="Screenshot 2026-08-24 183911" src="https://github.com/user-attachments/assets/83a95b43-a900-4982-ad0d-a5c3435546a1" />
+<img width="927" height="702" alt="image" src="https://github.com/user-attachments/assets/fa459957-dcc5-41ef-b4da-dba5f3505251" />
 
 
 ### Prerequisites
